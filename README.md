@@ -1,69 +1,34 @@
 # EXP10
-Here is the **rephrased version** of your experiment arranged in proper format (Aim, Theory, Algorithms, Conclusion) similar to the previous ones:
+Aim: To study and implement the Pandas library in Python for creating and manipulating Series and DataFrames, and to perform basic data handling, exploration, and analysis on structured datasets.
 
----
+Theory: Pandas is an open-source Python library used for efficient data manipulation and analysis. It provides two main data structures: Series and DataFrame. A Series is a one-dimensional labeled array that can store different types of data, while a DataFrame is a two-dimensional table-like structure consisting of rows and columns with labeled axes. These structures make it easy to handle structured data in a format similar to spreadsheets or database tables.
 
-# **Aim: Study of Pandas Library in Python**
+Pandas allows powerful data access and transformation using label-based indexing and position-based indexing. It also offers many built-in statistical and descriptive functions that help in quick data summarization and exploratory data analysis. Because of its flexibility, high performance, and compatibility with other scientific libraries, Pandas is widely used in data science, machine learning, and real-world data processing applications.
 
----
+Key Functions and Attributes:
 
-## **Theory**
+Series() – Creates a one-dimensional labeled data structure.
 
-Pandas is a powerful, open-source Python library used for data analysis and data manipulation. It provides flexible and efficient data structures designed to handle structured data easily.
+DataFrame() – Creates a two-dimensional table-like data structure.
 
-The two primary data structures in Pandas are:
+head() – Displays the first few rows of a DataFrame.
 
-### **1. Series**
+tail() – Displays the last few rows of a DataFrame.
 
-`pd.Series()` creates a one-dimensional labeled array that can store any data type such as integers, floats, strings, or objects. Each element in a Series has an associated index.
+describe() – Provides a statistical summary of numerical columns.
 
-### **2. DataFrame**
+mean() – Calculates the average value of the data.
 
-`pd.DataFrame()` creates a two-dimensional, tabular data structure with labeled rows and columns. It is size-mutable, meaning rows and columns can be added or removed.
+sum() – Computes the total of the values.
 
----
+max() / min() – Returns the highest and lowest values in the data.
 
-## **Important DataFrame Attributes**
+columns – Displays the column labels of the DataFrame.
 
-* **df.shape** – Returns a tuple representing the number of rows and columns.
-* **df.ndim** – Returns the number of dimensions (usually 2 for DataFrame).
-* **df.columns** – Displays the column names.
-* **df.dtypes** – Shows the data type of each column.
+index – Shows the row labels of the DataFrame.
 
----
+loc[] – Accesses data using row and column labels.
 
-## **Data Selection and Indexing**
+iloc[] – Accesses data using integer-based index positions.
 
-* **df.loc[row_index, "ColumnName"]** – Accesses data using row and column labels.
-* **df.iloc[row_index, col_index]** – Accesses data using integer-based indexing.
-
----
-
-## **Data Manipulation Functions**
-
-* **df.drop()** – Removes specified rows or columns.
-
-  * `axis=1` is used to remove a column.
-* **df.mean()** – Calculates the average value of a column.
-* **df.max()** – Returns the maximum value in a column.
-* **df.min()** – Returns the minimum value in a column.
-
----
-
-## **Filtering Data**
-
-Conditional filtering is performed using:
-
-```
-df[df["Marks"] > 80]
-```
-
-This statement displays only those rows where the value in the "Marks" column is greater than 80.
-
-Pandas simplifies data cleaning, transformation, filtering, and statistical analysis compared to traditional Python methods.
-
----
-
-# **Conclusion**
-
-Thus, the Pandas library was successfully studied and implemented in Python. Various operations such as data creation, selection, filtering, deletion, and statistical analysis were performed using Pandas functions. The library makes data handling simple, efficient, and structured for analytical tasks.
+Conclusion: Thus, the experiment successfully demonstrated the use of the Pandas library for handling structured data. We learned how to create and manipulate Series and DataFrames, perform indexing and data selection, and apply basic statistical operations. This experiment highlights the importance of Pandas as an essential tool for data preprocessing, analysis, and real-world data-driven applications.
